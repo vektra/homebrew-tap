@@ -5,16 +5,16 @@
 class Mockery < Formula
   desc "A mock code autogenerator for Go"
   homepage "https://github.com/vektra/mockery"
-  version "2.7.3"
+  version "2.7.4"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/vektra/mockery/releases/download/v2.7.3/mockery_2.7.3_Darwin_x86_64.tar.gz"
-    sha256 "dfddccc64786d8b9a1591361adc34d5730c1407d1d00d88633a574d20b011335"
+    url "https://github.com/vektra/mockery/releases/download/v2.7.4/mockery_2.7.4_Darwin_x86_64.tar.gz"
+    sha256 "61a11715667cb6a4e106ae6455cb1249b9e60f3776454e0c58ea104225964932"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vektra/mockery/releases/download/v2.7.3/mockery_2.7.3_Linux_x86_64.tar.gz"
-    sha256 "8bbaac3c4e131837cdf7848c7f944007bacccc98d79abac6aec702d442c2df6e"
+    url "https://github.com/vektra/mockery/releases/download/v2.7.4/mockery_2.7.4_Linux_x86_64.tar.gz"
+    sha256 "4fa32a069f32a9f1ae1c211a2caee8500bc8cb23adbacef296d5236ba043c068"
   end
 
   def install
