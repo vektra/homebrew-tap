@@ -5,24 +5,29 @@
 class Mockery < Formula
   desc "A mock code autogenerator for Go"
   homepage "https://github.com/vektra/mockery"
-  version "2.8.0"
+  version "2.9.2"
   bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/vektra/mockery/releases/download/v2.8.0/mockery_2.8.0_Darwin_x86_64.tar.gz"
-    sha256 "b1c072b3d5765eaf5458668881daeb0bbddd899fd9de0659669da56beb8bf2ca"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/vektra/mockery/releases/download/v2.9.2/mockery_2.9.2_Darwin_x86_64.tar.gz"
+      sha256 "fa9bdd15dca59788996c9cadac773cb1d1cf3d02b65cd7b226e015ebaee913c1"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/vektra/mockery/releases/download/v2.9.2/mockery_2.9.2_Darwin_arm64.tar.gz"
+      sha256 "b70050ee6d1af1df1b6de5ab2afcf06661ee1c97b66b229e951f28f3e78bc5df"
+    end
   end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/vektra/mockery/releases/download/v2.8.0/mockery_2.8.0_Darwin_arm64.tar.gz"
-    sha256 "1aaf6eea1ca011eafe792cf6f28caa963d84b6652703911d94e29dc13d5c18a3"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vektra/mockery/releases/download/v2.8.0/mockery_2.8.0_Linux_x86_64.tar.gz"
-    sha256 "0d179b17635d94f7ec77b1c350ef6567ae7dc5c38aecdd048a0c638701364d39"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/vektra/mockery/releases/download/v2.8.0/mockery_2.8.0_Linux_arm64.tar.gz"
-    sha256 "316373fe0d0ac860730be0affeab415f6aec893e2b3ff837e8f9a316fed6c5c6"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/vektra/mockery/releases/download/v2.9.2/mockery_2.9.2_Linux_x86_64.tar.gz"
+      sha256 "d7dea2432628c8842e5c8ec9c4f64dbf788ba9dc6462cb0e18d166d295df3268"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/vektra/mockery/releases/download/v2.9.2/mockery_2.9.2_Linux_arm64.tar.gz"
+      sha256 "c499d817db43fd2e2d203255231bdb3e06eef7b5983fcc3f4cab3883e21dcf04"
+    end
   end
 
   def install
