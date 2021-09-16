@@ -5,28 +5,28 @@
 class Mockery < Formula
   desc "A mock code autogenerator for Go"
   homepage "https://github.com/vektra/mockery"
-  version "2.9.2"
+  version "2.9.3"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vektra/mockery/releases/download/v2.9.2/mockery_2.9.2_Darwin_x86_64.tar.gz"
-      sha256 "fa9bdd15dca59788996c9cadac773cb1d1cf3d02b65cd7b226e015ebaee913c1"
+      url "https://github.com/vektra/mockery/releases/download/v2.9.3/mockery_2.9.3_Darwin_x86_64.tar.gz"
+      sha256 "a7d67ea8f9e5edc6b4b70ba5c57d1ab100da1739882db576f33c945c65165e9c"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vektra/mockery/releases/download/v2.9.2/mockery_2.9.2_Darwin_arm64.tar.gz"
-      sha256 "b70050ee6d1af1df1b6de5ab2afcf06661ee1c97b66b229e951f28f3e78bc5df"
+      url "https://github.com/vektra/mockery/releases/download/v2.9.3/mockery_2.9.3_Darwin_arm64.tar.gz"
+      sha256 "c2d369ed297598d34ff9e13dfddf1247981d425b4bc06ac8c28433702ff0cee0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/vektra/mockery/releases/download/v2.9.2/mockery_2.9.2_Linux_x86_64.tar.gz"
-      sha256 "d7dea2432628c8842e5c8ec9c4f64dbf788ba9dc6462cb0e18d166d295df3268"
+      url "https://github.com/vektra/mockery/releases/download/v2.9.3/mockery_2.9.3_Linux_x86_64.tar.gz"
+      sha256 "b8c9a9a36b5f856fd89682759888f1102891f13d8af1d38de2db504f7bceba9a"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vektra/mockery/releases/download/v2.9.2/mockery_2.9.2_Linux_arm64.tar.gz"
-      sha256 "c499d817db43fd2e2d203255231bdb3e06eef7b5983fcc3f4cab3883e21dcf04"
+      url "https://github.com/vektra/mockery/releases/download/v2.9.3/mockery_2.9.3_Linux_arm64.tar.gz"
+      sha256 "9b5886233e078cbce416834182484423d7ea28ede2b049930f2517b7d1464e58"
     end
   end
 
