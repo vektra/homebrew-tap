@@ -5,20 +5,20 @@
 class Mockery < Formula
   desc "A mock code autogenerator for Go"
   homepage "https://github.com/vektra/mockery"
-  version "2.30.4"
+  version "2.30.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vektra/mockery/releases/download/v2.30.4/mockery_2.30.4_Darwin_x86_64.tar.gz"
-      sha256 "e1c8ed73007802d6fdeddbc40671ca80e0b311652b56fe7ad54e9917b7a09e2b"
+      url "https://github.com/vektra/mockery/releases/download/v2.30.5/mockery_2.30.5_Darwin_x86_64.tar.gz"
+      sha256 "1ef0c0fd9c4ee0e76686e4a7e0053989940761defb2394648329a491c08fc188"
 
       def install
         bin.install "mockery"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vektra/mockery/releases/download/v2.30.4/mockery_2.30.4_Darwin_arm64.tar.gz"
-      sha256 "98da030af7e7432be3b71a9a78c59ba199c31f7b0518b8808d3664401d768ed4"
+      url "https://github.com/vektra/mockery/releases/download/v2.30.5/mockery_2.30.5_Darwin_arm64.tar.gz"
+      sha256 "f5386c77e4685b5f566f415d6f007ead356cb9b712195f4fdc6d52e722f44b29"
 
       def install
         bin.install "mockery"
@@ -28,16 +28,16 @@ class Mockery < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vektra/mockery/releases/download/v2.30.4/mockery_2.30.4_Linux_arm64.tar.gz"
-      sha256 "4a9fbe184b45d82add4c2b6cc30c6c68a36afb0a9003c3edc41324c5007d5545"
+      url "https://github.com/vektra/mockery/releases/download/v2.30.5/mockery_2.30.5_Linux_arm64.tar.gz"
+      sha256 "661cce380567a491ae9653e595bc831a6a8d80b22a8822f6011da89024e80c96"
 
       def install
         bin.install "mockery"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vektra/mockery/releases/download/v2.30.4/mockery_2.30.4_Linux_x86_64.tar.gz"
-      sha256 "e6f78178104a9e734bdefe62fc0c9c465da91676740d55ca5e2cfd874297d68f"
+      url "https://github.com/vektra/mockery/releases/download/v2.30.5/mockery_2.30.5_Linux_x86_64.tar.gz"
+      sha256 "dd4e8b6839847492dd31984a23027f77e4e389d899e324555dbe5f5008d19fe6"
 
       def install
         bin.install "mockery"
