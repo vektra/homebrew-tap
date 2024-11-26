@@ -5,20 +5,20 @@
 class Mockery < Formula
   desc "A mock code autogenerator for Go"
   homepage "https://github.com/vektra/mockery"
-  version "2.49.0"
+  version "2.49.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/vektra/mockery/releases/download/v2.49.0/mockery_2.49.0_Darwin_x86_64.tar.gz"
-      sha256 "df37fa7bd0e3dab08d9ec615ad38edf1c5abe5f292f71ffa366d371c814e48f6"
+      url "https://github.com/vektra/mockery/releases/download/v2.49.1/mockery_2.49.1_Darwin_x86_64.tar.gz"
+      sha256 "f0321e8d194a0a19a290299ae56c32d1112595f567bb994f3eb56b87f631c18f"
 
       def install
         bin.install "mockery"
       end
     end
     on_arm do
-      url "https://github.com/vektra/mockery/releases/download/v2.49.0/mockery_2.49.0_Darwin_arm64.tar.gz"
-      sha256 "eaff692f26123f89c498eae5ba8749f956d8fc4cbb945fb413c5f42342678c7f"
+      url "https://github.com/vektra/mockery/releases/download/v2.49.1/mockery_2.49.1_Darwin_arm64.tar.gz"
+      sha256 "992f24b6ee57fe433bf0a36bfbf17e372bef005d64133264f2c5e7c9b18b7461"
 
       def install
         bin.install "mockery"
@@ -29,8 +29,8 @@ class Mockery < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vektra/mockery/releases/download/v2.49.0/mockery_2.49.0_Linux_x86_64.tar.gz"
-        sha256 "029bd05ffb1920a1c88f5ac1e9e8205cac36e40a557c8fc63803b3f0b6692ee2"
+        url "https://github.com/vektra/mockery/releases/download/v2.49.1/mockery_2.49.1_Linux_x86_64.tar.gz"
+        sha256 "1b66e2e30548162f86e31b88a617e3bc8223f9c808f0acb42ced47e67f1aa533"
 
         def install
           bin.install "mockery"
@@ -39,8 +39,8 @@ class Mockery < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vektra/mockery/releases/download/v2.49.0/mockery_2.49.0_Linux_arm64.tar.gz"
-        sha256 "eeee0e8220dbf1b5d9a3ec1baef7cba1708edd574f383c7693b18828af9227ce"
+        url "https://github.com/vektra/mockery/releases/download/v2.49.1/mockery_2.49.1_Linux_arm64.tar.gz"
+        sha256 "e77ef813558c5d86987231de8fa8108e28ace657c67f7f5c01d633413663611d"
 
         def install
           bin.install "mockery"
