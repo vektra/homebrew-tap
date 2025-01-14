@@ -5,20 +5,20 @@
 class Mockery < Formula
   desc "A mock code autogenerator for Go"
   homepage "https://github.com/vektra/mockery"
-  version "3.0.0-alpha.19"
+  version "2.51.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/vektra/mockery/releases/download/v3.0.0-alpha.19/mockery_3.0.0-alpha.19_Darwin_x86_64.tar.gz"
-      sha256 "62c4a8489626eb280c3ef3f935dec83b905825210da681a56b074c364073b2f4"
+      url "https://github.com/vektra/mockery/releases/download/v2.51.0/mockery_2.51.0_Darwin_x86_64.tar.gz"
+      sha256 "74f866359721e1d3528916b1911af557bd9429a119549d13da4cd9bfb1396ffd"
 
       def install
         bin.install "mockery"
       end
     end
     on_arm do
-      url "https://github.com/vektra/mockery/releases/download/v3.0.0-alpha.19/mockery_3.0.0-alpha.19_Darwin_arm64.tar.gz"
-      sha256 "ec6270b9d91ea166ed0a2a869e9e4480f0c5013c9344d7bf79cb63168429e288"
+      url "https://github.com/vektra/mockery/releases/download/v2.51.0/mockery_2.51.0_Darwin_arm64.tar.gz"
+      sha256 "b36473215483dafdfde7704a8ac08051bd4db096d9e376a798e08efed3336cac"
 
       def install
         bin.install "mockery"
@@ -29,8 +29,8 @@ class Mockery < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vektra/mockery/releases/download/v3.0.0-alpha.19/mockery_3.0.0-alpha.19_Linux_x86_64.tar.gz"
-        sha256 "d555cfb2f0785b1d4f16e81ad6583676d6b423f98742bcdd58e77c70c54a534e"
+        url "https://github.com/vektra/mockery/releases/download/v2.51.0/mockery_2.51.0_Linux_x86_64.tar.gz"
+        sha256 "c24b0d25e3601a677285f5d389d152b067ae5d80ee42e1471778010dbd014ae7"
 
         def install
           bin.install "mockery"
@@ -39,8 +39,8 @@ class Mockery < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vektra/mockery/releases/download/v3.0.0-alpha.19/mockery_3.0.0-alpha.19_Linux_arm64.tar.gz"
-        sha256 "c6400b6562526562d27eaf68bcca2f78bb264352aa9f354a5bd692b096c23998"
+        url "https://github.com/vektra/mockery/releases/download/v2.51.0/mockery_2.51.0_Linux_arm64.tar.gz"
+        sha256 "31e7f6833b74e8b68b964908b6d23821cb91ead07106b5dd0c6fd893db4ab11c"
 
         def install
           bin.install "mockery"
